@@ -52,12 +52,14 @@
   };
 
   const tweetIt = () => {
+    const randomIndex = Math.floor(Math.random() * lyrics.length);
     const line = lyrics[randomIndex];
-    const randomIndex = Math.floor(Math.random() * lyrics.length);    
-    const randomLineIndex = Math.floor(Math.random() * line.lines.length);    
+    const randomLineIndex = Math.floor(Math.random() * line.lines.length);
+    
+    console.log(line.lines[randomLineIndex], line.song, line.album);
 
     const tweet = {
-      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}" #ghost #ghostBC #ghostLyrics`
+      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}", on ${line.album} #ghost #ghostBC #ghostLyrics`
     }
 
     T.post('statuses/update', tweet, tweeted);
