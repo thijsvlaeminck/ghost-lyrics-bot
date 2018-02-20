@@ -29,7 +29,7 @@
     const from = eventMsg.user.screen_name;
 
     if (tweetTo === `GhostLyricBot`) {
-      const b64content = fs.readFileSync(`assets/img/papa2.png`, { encoding: 'base64' })
+      const b64content = fs.readFileSync(`assets/img/papa.png`)
 
       // first we must post the media to Twitter
       T.post('media/upload', { media_data: b64content }, function (err, data, response) {
