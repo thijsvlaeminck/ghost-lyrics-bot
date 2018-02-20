@@ -19,7 +19,7 @@
         console.log(error)
       });
 
-    setInterval(tweetIt, 1000 * 60  * 2);
+    setInterval(tweetIt, 1000 * 60 * 60 * 6);
     stream.on(`tweet`, tweetEvent);
   };
 
