@@ -1,0 +1,1 @@
+A twitter bot that tweets lyrics by the band ghost

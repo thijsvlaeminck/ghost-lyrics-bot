@@ -1,0 +1,21 @@
+{
+  "name": "ghost lyric bot",
+  "version": "1.0.0",
+  "description": "Twitter bot that tweets Ghost lyrics",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ghost",
+    "lyrics",
+    "bot"
+  ],
+  "author": "Thijs Vlaeminck",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^1.7.3",
+    "twit": "^2.2.9"
+  }
+}
