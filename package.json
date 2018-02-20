@@ -1,5 +1,5 @@
 {
-  "name": "ghost lyric bot",
+  "name": "ghost-lyric-bot",
   "version": "1.0.0",
   "description": "Twitter bot that tweets Ghost lyrics",
   "main": "bot.js",

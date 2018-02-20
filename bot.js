@@ -14,7 +14,10 @@
     fetch(`http://student.howest.be/thijs.vlaeminck/bot/ghost.json`)
       .then(r => r.json())
       .then(jsonData => lyrics = jsonData)
-      .then(tweetIt);
+      .then(tweetIt)
+      .catch(error => {
+        console.log(error)
+      });
 
     setInterval(tweetIt, 1000 * 60 * 60 * 6.00001);
     stream.on(`tweet`, tweetEvent);
@@ -49,10 +52,12 @@
   };
 
   const tweetIt = () => {
-    const randomIndex = Math.floor(Math.random() * lyrics.length);
+    const line = lyrics[randomIndex];
+    const randomIndex = Math.floor(Math.random() * lyrics.length);    
+    const randomLineIndex = Math.floor(Math.random() * line.lines.length);    
 
     const tweet = {
-      status: `${lyrics[randomIndex].toUpperCase()} #ghost #ghostBC #ghostLyrics`
+      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}" #ghost #ghostBC #ghostLyrics`
     }
 
     T.post('statuses/update', tweet, tweeted);
