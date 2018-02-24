@@ -29,7 +29,7 @@
     const from = eventMsg.user.screen_name;
 
     if (tweetTo === `GhostLyricBot` && from !== `GhostLyricBot`) {
-      const b64content = fs.readFileSync(`assets/img/papa.png`)
+      const b64content = fs.readFileSync(`assets/img/papa.png`, { encoding: 'base64' })
 
       // first we must post the media to Twitter
       T.post('media/upload', { media_data: b64content }, function (err, data, response) {
@@ -42,7 +42,7 @@
         T.post('media/metadata/create', meta_params, function (err, data, response) {
           if (!err) {
             // now we can reference the media and post a tweet (media will attach to the tweet)
-            const tweet = { status: `@${from} however fair and pure, you crave wand #ghost #ghostBC #PapaEmeritus`, media_ids: [mediaIdStr] };
+            const tweet = { status: `@${from} however fair and pure, you crave the wand #ghost #ghostBC #PapaEmeritus`, media_ids: [mediaIdStr] };
 
             T.post('statuses/update', tweet, tweeted);
           }
