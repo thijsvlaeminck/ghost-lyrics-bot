@@ -423,6 +423,12 @@
 
 
   {
+    "song": "Ashes",
+    "album": "Prequelle",
+    "lines": [
+    ]
+  },
+  {
     "song": "Rats",
     "album": "Prequelle",
     "lines": [
@@ -436,6 +442,45 @@
       "And filthy rodents are still coming for your souls, never to let go",
       "They're still coming after you",
       "There's nothing you can do"
+    ]
+  },
+  {
+    "song": "Faith",
+    "album": "Prequelle",
+    "lines": [
+      "There is a scourge in the guise of sanctity, a perpetrator with a quill",
+      "Although it's... Not perceived and it's not mystery",
+      "The accuser sends the bill",
+      "I am all eyes",
+      "I am all ears",
+      "I am your wall, and I'm watching you fall",
+      "Because faith. Is. Mine",
+      "The Ludites shun the diabolical, A fecal trail across the land",
+      "Although it... Stinks, feels and looks identical",
+      "And a pack of fools can take the stand"
+    ]
+  },
+  {
+    "song": "See The Light",
+    "album": "Prequelle",
+    "lines": [
+      "Many  a sin I have witnessed",
+      "And in many indeed I have been",
+      "Many a rat I have befriended, and many a thorn stood between",
+      "But of all the demons I have known, none could compare to you",
+      "Every day that you feed me with hate, I grow stronger",
+      "Drink me, eat me, you will see the light",
+      "You will see the light",
+      "Many a mind I have haunted, and in many I may have been",
+      "Often the one to have flaunted an image, grotesque and obscene",
+      "But of all the dark roads that I roam, none could compare to you",
+    ]
+  },
+  {
+    "song": "Miasma",
+    "album": "Prequelle",
+    "lines": [
+      "SAX SOLO"
     ]
   },
   {
@@ -454,5 +499,47 @@
       "I don’t wanna end like this (Like this), But the sting in the way you kiss me (I'm loving it)",
       "Just wanna be, I wanna bewitch you one last time in the ancient rite"
     ]
-  }
+  },
+  {
+    "song": "Pro Memoria",
+    "album": "Prequelle",
+    "lines": [
+      "Lucifer, whispering, silently into your mind. Who walks behind, who walks behind",
+      "Standing tall, invincible, but do not forget your knives. To save your lives, to save your lives",
+      "Don't you forget about dying",
+      "Don't you forget about your friend death",
+      "Don't you forget that you will die",
+      "Don’t you vomit savage slurs, spewed up wickedly. To hide from me, to hide from me",
+      "Navigate all alone, on this tempestuous sea. To ride with me, to ride with me"
+    ]
+  },
+  {
+    "song": "Witch Image",
+    "album": "Prequelle",
+    "lines": [
+      "You have never stood this close, to where you want to be",
+      "You have always waded in the shallows, between me and the deep blue sea",
+      "You would never want me to appear, you never want this to be over. You never want it to reach but to the edge of time",
+      "While you sleep in earthly delight, someone's flesh is rotting tonight",
+      "Like no other to you, what you have done, you can never undo",
+      "I have always kept you closer than you have known",
+      "I am riding in the shadows behind you, on a pale white horse",
+      "While you sleep in earthly delight, still your soul will suffer this plight. Like your father in hell, what you have sold you can not unsell",
+      "While you sleep in earthly delight, still your soul will suffer this plight. But like a mother would save her own child from digging a grave"
+    ]
+  },
+  {
+    "song": "Life Eternal",
+    "album": "Prequelle",
+    "lines": [
+      "Can you hear me say your name forever?",
+      "Can you feel me longing for you forever?",
+      "Would you let me touch your soul forever?",
+      "I know the light grows darker down below, but in your eyes it is gone before you know",
+      "This is the moment of just letting go",
+      "She said, if you had life eternal...",
+      "We dance once more, I feel your hands are cold. Within your heart, a story to be told",
+      "Forever... if you had life eternal?"
+    ]
+  },
 ]
