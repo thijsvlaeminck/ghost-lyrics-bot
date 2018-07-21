@@ -42,7 +42,7 @@
         T.post('media/metadata/create', meta_params, function (err, data, response) {
           if (!err) {
             // now we can reference the media and post a tweet (media will attach to the tweet)
-            const tweet = { status: `@${from} however fair and pure, you crave the wand #ghost #ghostBC #PapaEmeritus`, media_ids: [mediaIdStr] };
+            const tweet = { status: `@${from} however fair and pure, you crave the wand #thebandghost #PapaEmeritus #ghostlyrics`, media_ids: [mediaIdStr] };
 
             T.post('statuses/update', tweet, tweeted);
           }
@@ -59,7 +59,7 @@
     console.log(line.lines[randomLineIndex], line.song, line.album);
 
     const tweet = {
-      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}", on ${line.album} #ghost #ghostBC #ghostLyrics`
+      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}", on ${line.album} #thebandghost #CardinalCopia #ghostLyrics`
     }
 
     T.post('statuses/update', tweet, tweeted);
