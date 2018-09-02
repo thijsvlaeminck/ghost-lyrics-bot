@@ -19,7 +19,7 @@
         console.log(error)
       });
 
-    setInterval(tweetIt, 1000 * 60 * 60 * 6);
+    setInterval(tweetIt, 1000 * 60 * 60 * 10);
     stream.on(`tweet`, tweetEvent);
   };
 
@@ -29,7 +29,7 @@
     const from = eventMsg.user.screen_name;
 
     if (tweetTo === `GhostLyricBot` && from !== `GhostLyricBot`) {
-      const b64content = fs.readFileSync(`assets/img/papa.png`, { encoding: 'base64' })
+      const b64content = fs.readFileSync(`assets/img/papa2.png`, { encoding: 'base64' })
 
       // first we must post the media to Twitter
       T.post('media/upload', { media_data: b64content }, function (err, data, response) {
@@ -59,7 +59,7 @@
     console.log(line.lines[randomLineIndex], line.song, line.album);
 
     const tweet = {
-      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}", on ${line.album} #thebandghost #CardinalCopia #ghostLyrics`
+      status: `${line.lines[randomLineIndex].toUpperCase()} - from "${line.song}", on ${line.album} #thebandghost #CardinalCopia #ghostLyrics #ghost`
     }
 
     T.post('statuses/update', tweet, tweeted);

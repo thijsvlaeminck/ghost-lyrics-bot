@@ -1,6 +1,6 @@
 {
   "name": "ghost-lyric-bot",
-  "version": "1.0.0",
+  "version": "6.6.6",
   "description": "Twitter bot that tweets Ghost lyrics",
   "main": "bot.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Thijs Vlaeminck",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^1.7.3",
-    "twit": "^2.2.9"
+    "node-fetch": "^2.2.0",
+    "twit": "^2.2.11"
   }
 }
