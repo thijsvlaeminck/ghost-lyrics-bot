@@ -20,35 +20,6 @@
       });
 
     setInterval(tweetIt, 1000 * 60 * 60 * 10);
-    stream.on(`tweet`, tweetEvent);
-  };
-
-  const tweetEvent = eventMsg => {
-    // const tweetTo = eventMsg.entities.user_mentions.screen_name;
-    const tweetTo = eventMsg.in_reply_to_screen_name;
-    const from = eventMsg.user.screen_name;
-
-    if (tweetTo === `GhostLyricBot` && from !== `GhostLyricBot`) {
-      const b64content = fs.readFileSync(`assets/img/papa2.png`, { encoding: 'base64' })
-
-      // first we must post the media to Twitter
-      T.post('media/upload', { media_data: b64content }, function (err, data, response) {
-        // now we can assign alt text to the media, for use by screen readers and
-        // other text-based presentations and interpreters
-        const mediaIdStr = data.media_id_string;
-        const altText = "Papa Emeritus showing his kazoo";
-        const meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
-
-        T.post('media/metadata/create', meta_params, function (err, data, response) {
-          if (!err) {
-            // now we can reference the media and post a tweet (media will attach to the tweet)
-            const tweet = { status: `@${from} however fair and pure, you crave the wand #thebandghost #PapaEmeritus #ghostlyrics`, media_ids: [mediaIdStr] };
-
-            T.post('statuses/update', tweet, tweeted);
-          }
-        });
-      });
-    }
   };
 
   const tweetIt = () => {
@@ -67,7 +38,7 @@
 
   const tweeted = (err, data, response) => {
     if (err) {
-      console.log("Something went wrong. Idiot.");
+      console.log("Something went wrong.");
     } else {
       console.log("Tweet sent!");
     }
